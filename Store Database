@@ -1,0 +1,22 @@
+create TABLE store_database (id INTEGER primary key, item TEXT, quantity INTEGER, price INTEGER, aisle INTEGER);
+
+INSERT INTO store_database VALUES (1, "grapes", 15, 4, 1);
+INSERT INTO store_database VALUES (2, "bananas", 10, 3, 1);
+INSERT INTO store_database VALUES (3, "granola bars", 7, 3, 4);
+INSERT INTO store_database VALUES (4, "peanut butter", 3, 5, 2);
+INSERT INTO store_database VALUES (5, "frozen pizza", 20, 5, 10);
+INSERT INTO store_database VALUES (6, "lemonade", 20, 2, 9);
+INSERT INTO store_database VALUES (7, "coffee", 9, 2, 9);
+INSERT INTO store_database VALUES (8, "chicken", 10, 8, 5);
+INSERT INTO store_database VALUES (9, "jelly", 15, 4, 2);
+INSERT INTO store_database VALUES (10, "bread", 20, 3, 6);
+INSERT INTO store_database VALUES (11, "pasta noodles", 6, 1, 6);
+INSERT INTO store_database VALUES (12, "pear", 9, 2, 1);
+INSERT INTO store_database VALUES (13, "peaches", 13, 3, 1);
+INSERT INTO store_database VALUES (14, "shrimp", 18, 7, 5);
+INSERT INTO store_database VALUES (15, "chocolate", 5, 5, 2);
+
+SELECT * FROM store_database;
+SELECT SUM(quantity) FROM store_database;
+SELECT * FROM store_database order by aisle;
+SELECT * FROM store_database WHERE price < 10 order by price;
